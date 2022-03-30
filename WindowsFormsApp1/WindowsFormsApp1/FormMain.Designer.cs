@@ -67,7 +67,7 @@ namespace WindowsFormsApp1
             this.panelMenu.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelMenu.Location = new System.Drawing.Point(0, 0);
             this.panelMenu.Name = "panelMenu";
-            this.panelMenu.Size = new System.Drawing.Size(232, 716);
+            this.panelMenu.Size = new System.Drawing.Size(232, 795);
             this.panelMenu.TabIndex = 1;
             // 
             // btnLogout
@@ -225,7 +225,7 @@ namespace WindowsFormsApp1
             this.panelTitle.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelTitle.Location = new System.Drawing.Point(232, 0);
             this.panelTitle.Name = "panelTitle";
-            this.panelTitle.Size = new System.Drawing.Size(922, 62);
+            this.panelTitle.Size = new System.Drawing.Size(1128, 62);
             this.panelTitle.TabIndex = 2;
             this.panelTitle.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panelTitle_MouseDown);
             // 
@@ -236,7 +236,7 @@ namespace WindowsFormsApp1
             this.btnExit.IconChar = FontAwesome.Sharp.IconChar.WindowClose;
             this.btnExit.IconColor = System.Drawing.Color.Red;
             this.btnExit.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnExit.Location = new System.Drawing.Point(889, 4);
+            this.btnExit.Location = new System.Drawing.Point(1093, 3);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(32, 32);
             this.btnExit.TabIndex = 2;
@@ -275,7 +275,7 @@ namespace WindowsFormsApp1
             this.panelDesktop.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelDesktop.Location = new System.Drawing.Point(232, 62);
             this.panelDesktop.Name = "panelDesktop";
-            this.panelDesktop.Size = new System.Drawing.Size(922, 654);
+            this.panelDesktop.Size = new System.Drawing.Size(1128, 733);
             this.panelDesktop.TabIndex = 3;
             // 
             // pictureBox1
@@ -284,7 +284,7 @@ namespace WindowsFormsApp1
             this.pictureBox1.Image = global::WindowsFormsApp1.Properties.Resources.anh;
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(922, 654);
+            this.pictureBox1.Size = new System.Drawing.Size(1128, 733);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
@@ -293,7 +293,7 @@ namespace WindowsFormsApp1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1154, 716);
+            this.ClientSize = new System.Drawing.Size(1360, 795);
             this.Controls.Add(this.panelDesktop);
             this.Controls.Add(this.panelTitle);
             this.Controls.Add(this.panelMenu);

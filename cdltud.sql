@@ -24,6 +24,7 @@ Username varchar(50),
 Password varchar(100)
 )
 
+select * from tblGiangVien where Username = 'adminXuan' and Password='adminXuan';
 
 create table tblNoidungthi (
 MaNDThi varchar(50) primary key not null,
@@ -65,6 +66,8 @@ insert into tblGiangVien values
  ('GV02', N'Lê Hữu Dũng',N'Nam','0324215356', '1880-11-1','lehuudung@gmail.com','admin','adminDung'),
  ('GV03', N'Thái Thanh Tùng',N'Nam','0412578965', '1881-12-12','thaithanhtung@gmail.com','admin','adminTung'),
  ('GV04', N'Mai Thúy Hà',N'Nữ','0354125789', '1883-10-10','maithuyha@gmail.com','admin','adminHa');
+insert into tblGiangVien values
+  ('GV99', N'Admin',N'Nữ','034454323', '1887-10-10','admin@gmail.com','admin','admin');
 
 
 
@@ -452,6 +455,7 @@ create proc xoa_doithi
 @MaDoi varchar(50) 
 as
 begin
+    
 	delete from tblDoithi where MaDoi = @MaDoi
 end
 GO
@@ -530,3 +534,36 @@ AS
 	drop proc xoa_svduthi
 
 	exec xoa_svduthi 'SV08', 'DT06';
+
+
+
+create view v_tksv
+select tblDoiThi.MaNDThi, tblNoidungthi.TenNDThi, tblNoidungthi.Ngaybatdau, tblNoidungthi.Ngayketthuc, tblSinhVien.TenSV
+from tblDoithi, tblNoidungthi, tblChitietDoi, tblSinhVien
+where tblDoithi.MaNDThi = tblNoidungthi.MaNDThi and tblChitietDoi.MaSV = tblSinhVien.MaSV and tblChiTietDoi.MaSV = 'SV01'
+group by tblNoidungthi.MaNDThi, tblNoidungthi.TenNDThi, tblDoithi.Ketqua, tblNoidungthi.Ngaybatdau, tblNoidungthi.Ngayketthuc, tblSinhVien.TenSV
+ 
+select * from tblDoithi where MaNDThi = 'ND02'
+
+select * from tblChitietDoi
+
+select * from tblSinhVien
+
+select * from tblDoithi
+select * from tblNoidungthi
+
+D10 DT01 DT02 DT03 DT05 DT999
+ND02 ND04 ND02 ND03 ND04 ND01
+
+
+select tblDoithi.MaDoi, tblDoithi.TenDoi, tblDoithi.MaNDThi, tblDoithi.Ketqua, tblDoithi.Nam
+from tblDoithi, tblNoidungthi
+where tblDoithi.MaNDThi = tblNoidungthi.MaNDThi and tblDoithi.MaNDThi = 'ND04'
+
+
+select * from tblChitietDoi where MaSV='SV08';
+
+DT01    DT02
+
+
+ND04    ND02

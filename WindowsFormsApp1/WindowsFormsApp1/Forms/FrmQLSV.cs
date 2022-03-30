@@ -120,7 +120,7 @@ namespace WindowsFormsApp1.ChildForm
             }
             catch (Exception)
             {
-                MessageBox.Show("Không hợp lệ", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                //MessageBox.Show("Không hợp lệ", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
@@ -184,6 +184,7 @@ namespace WindowsFormsApp1.ChildForm
                 txtSV_lop.Text = item.SubItems[6].Text;
 
             }
+            txtMaSV.Enabled = false;
         }
 
         private void btnSV_Xoa_Click(object sender, EventArgs e)
@@ -224,6 +225,7 @@ namespace WindowsFormsApp1.ChildForm
                 }
                 txtMaSV.Text = "";
                 ns_SV.Text = "";
+                txtMaSV.Enabled = true;
 
             }
         }

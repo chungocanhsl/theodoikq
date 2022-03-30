@@ -114,6 +114,8 @@ namespace WindowsFormsApp1.Forms
                
 
             }
+            txtMaNDThi.Enabled = false;
+
         }
 
         private void btnNDT_Sua_Click(object sender, EventArgs e)
@@ -199,6 +201,7 @@ namespace WindowsFormsApp1.Forms
                     c.ResetText();
                 }
                 txtMaNDThi.Text = "";
+                txtMaNDThi.Enabled = true;
             }
         }
 

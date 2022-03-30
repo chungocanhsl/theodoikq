@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using WindowsFormsApp1.ChildForm;
+using WindowsFormsApp1.Forms;
 
 namespace WindowsFormsApp1
 {
@@ -17,7 +18,16 @@ namespace WindowsFormsApp1
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FormMain());
+            //Application.Run(new FrmLogin());
+
+
+
+            FrmLogin frmLogin = new FrmLogin();
+            Application.Run(frmLogin);
+            if (frmLogin.IsLogin == true)
+            {
+                Application.Run(new FormMain());
+            }
         }
     }
 }

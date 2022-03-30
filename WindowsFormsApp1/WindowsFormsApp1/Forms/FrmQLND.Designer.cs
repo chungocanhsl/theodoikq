@@ -65,7 +65,7 @@ namespace WindowsFormsApp1.Forms
             // txtMaNDThi
             // 
             this.txtMaNDThi.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtMaNDThi.Location = new System.Drawing.Point(314, 45);
+            this.txtMaNDThi.Location = new System.Drawing.Point(314, 46);
             this.txtMaNDThi.Name = "txtMaNDThi";
             this.txtMaNDThi.Size = new System.Drawing.Size(178, 22);
             this.txtMaNDThi.TabIndex = 35;
@@ -74,7 +74,7 @@ namespace WindowsFormsApp1.Forms
             // 
             this.txtKH_ma.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtKH_ma.AutoSize = true;
-            this.txtKH_ma.Location = new System.Drawing.Point(33, 37);
+            this.txtKH_ma.Location = new System.Drawing.Point(33, 38);
             this.txtKH_ma.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.txtKH_ma.Name = "txtKH_ma";
             this.txtKH_ma.Size = new System.Drawing.Size(0, 17);
@@ -85,7 +85,7 @@ namespace WindowsFormsApp1.Forms
             this.dateNgayketthuc.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.dateNgayketthuc.CustomFormat = "";
             this.dateNgayketthuc.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateNgayketthuc.Location = new System.Drawing.Point(685, 83);
+            this.dateNgayketthuc.Location = new System.Drawing.Point(685, 84);
             this.dateNgayketthuc.Margin = new System.Windows.Forms.Padding(4);
             this.dateNgayketthuc.Name = "dateNgayketthuc";
             this.dateNgayketthuc.Size = new System.Drawing.Size(246, 22);
@@ -95,7 +95,7 @@ namespace WindowsFormsApp1.Forms
             // 
             this.label11.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(550, 126);
+            this.label11.Location = new System.Drawing.Point(550, 127);
             this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(63, 17);
@@ -106,7 +106,7 @@ namespace WindowsFormsApp1.Forms
             // 
             this.label12.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(548, 83);
+            this.label12.Location = new System.Drawing.Point(548, 84);
             this.label12.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(95, 17);
@@ -123,7 +123,7 @@ namespace WindowsFormsApp1.Forms
             this.btnNDT_Huy.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnNDT_Huy.IconSize = 25;
             this.btnNDT_Huy.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnNDT_Huy.Location = new System.Drawing.Point(762, 248);
+            this.btnNDT_Huy.Location = new System.Drawing.Point(762, 249);
             this.btnNDT_Huy.Margin = new System.Windows.Forms.Padding(4);
             this.btnNDT_Huy.Name = "btnNDT_Huy";
             this.btnNDT_Huy.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -143,7 +143,7 @@ namespace WindowsFormsApp1.Forms
             this.btnNDT_Xoa.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnNDT_Xoa.IconSize = 25;
             this.btnNDT_Xoa.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnNDT_Xoa.Location = new System.Drawing.Point(614, 248);
+            this.btnNDT_Xoa.Location = new System.Drawing.Point(614, 249);
             this.btnNDT_Xoa.Margin = new System.Windows.Forms.Padding(4);
             this.btnNDT_Xoa.Name = "btnNDT_Xoa";
             this.btnNDT_Xoa.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -163,7 +163,7 @@ namespace WindowsFormsApp1.Forms
             this.btnNDT_Sua.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnNDT_Sua.IconSize = 25;
             this.btnNDT_Sua.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnNDT_Sua.Location = new System.Drawing.Point(459, 248);
+            this.btnNDT_Sua.Location = new System.Drawing.Point(459, 249);
             this.btnNDT_Sua.Margin = new System.Windows.Forms.Padding(4);
             this.btnNDT_Sua.Name = "btnNDT_Sua";
             this.btnNDT_Sua.Size = new System.Drawing.Size(131, 49);
@@ -182,7 +182,7 @@ namespace WindowsFormsApp1.Forms
             this.btnNDT_Them.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnNDT_Them.IconSize = 25;
             this.btnNDT_Them.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnNDT_Them.Location = new System.Drawing.Point(308, 248);
+            this.btnNDT_Them.Location = new System.Drawing.Point(308, 249);
             this.btnNDT_Them.Margin = new System.Windows.Forms.Padding(4);
             this.btnNDT_Them.Name = "btnNDT_Them";
             this.btnNDT_Them.Size = new System.Drawing.Size(131, 49);
@@ -195,7 +195,7 @@ namespace WindowsFormsApp1.Forms
             // 
             this.label5.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(550, 49);
+            this.label5.Location = new System.Drawing.Point(550, 50);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(93, 17);
@@ -206,7 +206,7 @@ namespace WindowsFormsApp1.Forms
             // 
             this.label4.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(196, 126);
+            this.label4.Location = new System.Drawing.Point(196, 127);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(43, 17);
@@ -217,7 +217,7 @@ namespace WindowsFormsApp1.Forms
             // 
             this.label3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(169, 85);
+            this.label3.Location = new System.Drawing.Point(169, 86);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(111, 17);
@@ -228,7 +228,7 @@ namespace WindowsFormsApp1.Forms
             // 
             this.txtTenNDThi.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtTenNDThi.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtTenNDThi.Location = new System.Drawing.Point(314, 83);
+            this.txtTenNDThi.Location = new System.Drawing.Point(314, 84);
             this.txtTenNDThi.Margin = new System.Windows.Forms.Padding(4);
             this.txtTenNDThi.Name = "txtTenNDThi";
             this.txtTenNDThi.Size = new System.Drawing.Size(178, 22);
@@ -238,7 +238,7 @@ namespace WindowsFormsApp1.Forms
             // 
             this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(169, 49);
+            this.label2.Location = new System.Drawing.Point(169, 50);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(105, 17);
@@ -266,11 +266,11 @@ namespace WindowsFormsApp1.Forms
             this.groupBox2.Controls.Add(this.txtTenNDThi);
             this.groupBox2.Controls.Add(this.label2);
             this.groupBox2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.groupBox2.Location = new System.Drawing.Point(0, 368);
+            this.groupBox2.Location = new System.Drawing.Point(0, 367);
             this.groupBox2.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBox2.Size = new System.Drawing.Size(1069, 320);
+            this.groupBox2.Size = new System.Drawing.Size(1069, 321);
             this.groupBox2.TabIndex = 8;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Thông tin nội dung thi";
@@ -279,7 +279,7 @@ namespace WindowsFormsApp1.Forms
             // 
             this.txtMota.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtMota.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtMota.Location = new System.Drawing.Point(314, 124);
+            this.txtMota.Location = new System.Drawing.Point(314, 125);
             this.txtMota.Margin = new System.Windows.Forms.Padding(4);
             this.txtMota.Name = "txtMota";
             this.txtMota.Size = new System.Drawing.Size(178, 22);
@@ -290,7 +290,7 @@ namespace WindowsFormsApp1.Forms
             this.dateNgaybatdau.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.dateNgaybatdau.CustomFormat = "";
             this.dateNgaybatdau.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateNgaybatdau.Location = new System.Drawing.Point(685, 45);
+            this.dateNgaybatdau.Location = new System.Drawing.Point(685, 46);
             this.dateNgaybatdau.Margin = new System.Windows.Forms.Padding(4);
             this.dateNgaybatdau.Name = "dateNgaybatdau";
             this.dateNgaybatdau.Size = new System.Drawing.Size(246, 22);
@@ -300,10 +300,10 @@ namespace WindowsFormsApp1.Forms
             // 
             this.txtDiadiem.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtDiadiem.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtDiadiem.Location = new System.Drawing.Point(685, 121);
+            this.txtDiadiem.Location = new System.Drawing.Point(685, 122);
             this.txtDiadiem.Margin = new System.Windows.Forms.Padding(4);
             this.txtDiadiem.Name = "txtDiadiem";
-            this.txtDiadiem.Size = new System.Drawing.Size(178, 22);
+            this.txtDiadiem.Size = new System.Drawing.Size(246, 22);
             this.txtDiadiem.TabIndex = 36;
             // 
             // groupBox1

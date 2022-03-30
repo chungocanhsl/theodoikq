@@ -100,7 +100,7 @@ namespace WindowsFormsApp1.ChildForm
             }
             catch (Exception)
             {
-                MessageBox.Show("Không hợp lệ", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Mã giảng viên đã tồn tại", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 

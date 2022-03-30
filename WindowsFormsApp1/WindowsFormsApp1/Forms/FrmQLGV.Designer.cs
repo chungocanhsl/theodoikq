@@ -100,28 +100,23 @@ namespace WindowsFormsApp1.ChildForm
             // 
             // groupBox1
             // 
-            this.groupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.groupBox1.AutoSize = true;
             this.groupBox1.Controls.Add(this.btnGV_timkiem);
             this.groupBox1.Controls.Add(this.lsvGiangVien);
             this.groupBox1.Controls.Add(this.txtGV_search);
             this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Location = new System.Drawing.Point(0, 13);
+            this.groupBox1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.groupBox1.Location = new System.Drawing.Point(0, 0);
             this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBox1.Size = new System.Drawing.Size(1074, 349);
+            this.groupBox1.Size = new System.Drawing.Size(1069, 358);
             this.groupBox1.TabIndex = 3;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Danh sách giảng viên";
             // 
             // lsvGiangVien
             // 
-            this.lsvGiangVien.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.lsvGiangVien.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lsvGiangVien.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.columnHeader1,
@@ -138,7 +133,7 @@ namespace WindowsFormsApp1.ChildForm
             this.lsvGiangVien.Location = new System.Drawing.Point(14, 54);
             this.lsvGiangVien.Margin = new System.Windows.Forms.Padding(4);
             this.lsvGiangVien.Name = "lsvGiangVien";
-            this.lsvGiangVien.Size = new System.Drawing.Size(1055, 280);
+            this.lsvGiangVien.Size = new System.Drawing.Size(1055, 281);
             this.lsvGiangVien.TabIndex = 0;
             this.lsvGiangVien.UseCompatibleStateImageBehavior = false;
             this.lsvGiangVien.View = System.Windows.Forms.View.Details;
@@ -259,7 +254,7 @@ namespace WindowsFormsApp1.ChildForm
             this.cbGV.Location = new System.Drawing.Point(289, 138);
             this.cbGV.Margin = new System.Windows.Forms.Padding(4);
             this.cbGV.Name = "cbGV";
-            this.cbGV.Size = new System.Drawing.Size(115, 24);
+            this.cbGV.Size = new System.Drawing.Size(147, 24);
             this.cbGV.TabIndex = 3;
             // 
             // txtGV_username
@@ -269,7 +264,7 @@ namespace WindowsFormsApp1.ChildForm
             this.txtGV_username.Location = new System.Drawing.Point(693, 138);
             this.txtGV_username.Margin = new System.Windows.Forms.Padding(4);
             this.txtGV_username.Name = "txtGV_username";
-            this.txtGV_username.Size = new System.Drawing.Size(102, 22);
+            this.txtGV_username.Size = new System.Drawing.Size(147, 22);
             this.txtGV_username.TabIndex = 7;
             // 
             // label9
@@ -290,7 +285,7 @@ namespace WindowsFormsApp1.ChildForm
             this.txtGV_pass.Location = new System.Drawing.Point(693, 194);
             this.txtGV_pass.Margin = new System.Windows.Forms.Padding(4);
             this.txtGV_pass.Name = "txtGV_pass";
-            this.txtGV_pass.Size = new System.Drawing.Size(98, 22);
+            this.txtGV_pass.Size = new System.Drawing.Size(147, 22);
             this.txtGV_pass.TabIndex = 8;
             this.txtGV_pass.UseSystemPasswordChar = true;
             // 
@@ -323,7 +318,7 @@ namespace WindowsFormsApp1.ChildForm
             this.txtGV_email.Location = new System.Drawing.Point(693, 83);
             this.txtGV_email.Margin = new System.Windows.Forms.Padding(4);
             this.txtGV_email.Name = "txtGV_email";
-            this.txtGV_email.Size = new System.Drawing.Size(102, 22);
+            this.txtGV_email.Size = new System.Drawing.Size(147, 22);
             this.txtGV_email.TabIndex = 6;
             // 
             // label11
@@ -342,7 +337,7 @@ namespace WindowsFormsApp1.ChildForm
             this.ns_GV.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.ns_GV.CustomFormat = "";
             this.ns_GV.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.ns_GV.Location = new System.Drawing.Point(693, 42);
+            this.ns_GV.Location = new System.Drawing.Point(693, 36);
             this.ns_GV.Margin = new System.Windows.Forms.Padding(4);
             this.ns_GV.Name = "ns_GV";
             this.ns_GV.Size = new System.Drawing.Size(147, 22);

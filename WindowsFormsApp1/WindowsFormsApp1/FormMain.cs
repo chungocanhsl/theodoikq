@@ -32,6 +32,8 @@ namespace WindowsFormsApp1
             this.ControlBox = false;
             this.DoubleBuffered = true;
             this.MaximizedBounds = Screen.FromHandle(this.Handle).WorkingArea;
+
+
         }
 
         //structs
@@ -134,11 +136,25 @@ namespace WindowsFormsApp1
         private void btnBaocao_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color5);
+            OpenChildForm(new FrmTKBC());
+
         }
 
         private void btnLogout_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color6);
+
+            DialogResult result = MessageBox.Show("Bạn muốn đăng xuất?", "Thông báo?", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (result == DialogResult.Yes)
+            {
+                Application.Restart();
+                //this.Hide();
+                //FrmLogin frmLogin = new FrmLogin();
+                //frmLogin.ShowDialog();
+
+            }
+            else return;
+
         }
 
         private void btnHome_Click(object sender, EventArgs e)
@@ -180,7 +196,14 @@ namespace WindowsFormsApp1
 
         private void FormMain_Load(object sender, EventArgs e)
         {
-
+            var lbUs = GlobalValue.Username.ToString();
+            if (lbUs != "admin")
+            {
+                btnQLGV.Hide();
+               
+            }
+           
+                
         }
     }
 }

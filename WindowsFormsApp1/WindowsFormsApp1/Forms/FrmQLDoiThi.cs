@@ -249,7 +249,7 @@ namespace WindowsFormsApp1.Forms
             }
             catch (Exception)
             {
-                MessageBox.Show("Không thể xóa!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Không thể xóa. Bạn phải xóa toàn bộ sinh viên dự thi trước!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
@@ -263,6 +263,12 @@ namespace WindowsFormsApp1.Forms
                 }
                 txtMadoi.Text = "";
                 txtTendoi.Text = "";
+                txtMadoi.Enabled = true;
+                txtKetqua.Text = "";
+                dateNam.Enabled = true;
+                cbMaGV.Enabled = true;
+                cbMaNDT.Enabled = true;
+                txtKetqua.Enabled = false;
             }
         }
 
@@ -305,6 +311,9 @@ namespace WindowsFormsApp1.Forms
             loadMaGV();
             loadMaNDThi();
             loadMaSV();
+
+            btnThemSVDT.Enabled = false;
+            btnXoaSVDT.Enabled = false;
         }
 
         private void lsvDoithi_SelectedIndexChanged_1(object sender, EventArgs e)
@@ -318,6 +327,8 @@ namespace WindowsFormsApp1.Forms
                 cbMaGV.Text = item.SubItems[4].Text;
                 cbMaNDT.Text = item.SubItems[5].Text;
 
+                
+
             }
             txtKetqua.Enabled = true;
             txtMadoi.Enabled = false;
@@ -325,7 +336,32 @@ namespace WindowsFormsApp1.Forms
             cbMaGV.Enabled = false;
             cbMaNDT.Enabled = false;
 
+            if (txtKetqua.Text != string.Empty)
+            {
+                btnThemSVDT.Enabled = false;
+                btnXoaSVDT.Enabled = false;
+                cbSV.Enabled = false;
+            }
+            else
+            {
+                btnThemSVDT.Enabled = true;
+                btnXoaSVDT.Enabled = true;
+                cbSV.Enabled = true;
+
+            }
+
             load_svduthi();
+
+
+            /*if(lsvSVDT.SelectedItems.Count > 0 )
+            {
+                txtKetqua.Enabled = false;
+            } else
+            {
+                txtKetqua.Enabled = true;
+
+            }*/
+
         }
 
         private void btnLuu_Click(object sender, EventArgs e)
@@ -364,17 +400,16 @@ namespace WindowsFormsApp1.Forms
 
             btnDT_Them.Visible = true;
             btnLuu.Visible = false;
+            
         }
 
         private void lsvSVDT_SelectedIndexChanged(object sender, EventArgs e)
         {
             foreach (ListViewItem item in lsvSVDT.SelectedItems)
             {
-                
                 cbSV.Text = item.SubItems[3].Text;
-                
-
             }
+            
         }
 
         private void btnThemSVDT_Click(object sender, EventArgs e)
